@@ -1,0 +1,27 @@
+
+//Checking server
+        php artisan tinker
+        DB::connection()->getPdo();
+
+//To run migration
+        php artisan migrate
+
+//Startt larvel development server
+        php artisan serve
+
+//Sample data
+    \App\Models\User::create([
+        'name' => 'Ermias Antigegn',
+        'email' => 'chanyalew21@gmail.com',
+        'password' => bcrypt('password'),
+        'role' => 'user',
+    ]);
+
+\App\Models\User::create([
+        'name' => 'Eample',
+        'email' => 'examplxe@gmail.com',
+        'password' => bcrypt('1234567'),
+        'role' => 'admin',
+    ]);
+//Creating middleware
+        php artisan make:middleware RoleMiddleware  ..located at app/Http/Middleware/RoleMiddleware.php
