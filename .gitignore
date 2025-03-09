@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /.phpunit.cache
 /node_modules
 /public/build
@@ -21,3 +22,6 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
+=======
+node_modules
+>>>>>>> afa101f2ca9e0f64970d6de26d683e98ea1405e9
